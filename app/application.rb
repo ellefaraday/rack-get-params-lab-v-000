@@ -44,12 +44,12 @@ class Application
   end
 
   def add_to_cart
-    item = req.params["q"]
+    item = @req.params["q"]
     if @@items.include?(item)
       @@cart << item
-      resp.write "added #{item}"
+      @resp.write "added #{item}"
     else
-      resp.write "We don't have that item"
+      @resp.write "We don't have that item"
     end
   end
 
