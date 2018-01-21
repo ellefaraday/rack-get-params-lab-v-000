@@ -47,7 +47,6 @@ class Application
   def add_to_cart
     item = @req.params["item"]
     if @@items.include?(item)
-      binding.pry
       @@cart << item
       @resp.write "added #{item}"
     else
