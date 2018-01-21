@@ -43,7 +43,7 @@ class Application
     end
   end
 
-  def add_to_cart(resp)
+  def add_to_cart
     item = req.params["q"]
     if @@items.include?(item)
       @@cart << item
