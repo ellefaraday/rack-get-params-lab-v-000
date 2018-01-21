@@ -45,7 +45,7 @@ class Application
   end
 
   def add_to_cart
-    item = @req.params["q"]
+    item = @req.params["item"]
     if @@items.include?(item)
       binding.pry
       @@cart << item
