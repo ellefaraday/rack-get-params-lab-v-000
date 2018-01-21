@@ -33,7 +33,7 @@ class Application
     end
   end
 
-  def display_cart(resp)
+  def display_cart
     if @@cart.empty?
       @resp.write "Your cart is empty"
     else
